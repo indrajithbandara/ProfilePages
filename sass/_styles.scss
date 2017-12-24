@@ -2,3 +2,137 @@
 @import 'typography';
 @import 'media';
 @import 'mixins';
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: $body-bg;
+}
+/* MAIN NAVIGATION */
+#main_navigation{ 
+	background-image: linear-gradient(180deg, rgba(54, 61, 71, .84), rgba(54, 61, 71, .84)),  url(../img/bg-animation.gif);
+	height: 50px;
+	.navbar-brand{
+		img{
+			width: 36px;
+			height: 36px;
+			margin-top: -8px;
+		}
+	}
+	.navbar-toggle{
+		color: $white;
+		font-size: 24px;
+		padding-top: 0px;
+	}
+	.navbar-nav{
+		li{	
+			a{
+				color: $white;
+				@include transition(all ease 0.4s);
+				&:hover{
+					text-decoration: none;
+					background-color: grey;
+					@include transition(all ease 0.4s);
+				}&:active{
+					background-color: grey;
+				}&:focus{
+					background-color: grey;
+				}
+				.messages{
+					color: $yellow;
+				}
+			}
+			.btn-default{
+				background-color: $white;
+				color: $grey;
+				padding: 10px 20px;
+				border-radius: 0px;
+				margin-top: 4px;
+				margin-right: 10px;
+				&:hover{
+					background-color: grey;
+					color: $white;
+					@include transition(all ease 0.4s);
+				}&:active{
+					background-color: grey;
+					color: $white;
+				}&:focus{
+					background-color: grey;
+					color: $white;
+				}
+				i{
+					padding-right: 6px;
+				}
+			}
+			.admin{
+				padding: 11px 10px;
+				margin-right: 30px;
+				img{
+					width: 27px;
+					height: 27px;
+				}
+			}
+			.divider{
+				border-left: 1px solid $white;
+			    height: 35px;
+			    position: absolute;
+			    top: 8px;
+			    right: 10px;
+			}
+		}
+		.home{
+			font-size: 23px;
+			margin-right: 10px;
+			a{
+				&:hover{
+					background-color: inherit;
+					color: $yellow;
+				}
+			}
+		}
+	}
+}
+
+/* CHAT */
+#chat{
+	position: absolute;
+	width: 210px;
+	left: 0;
+	top: 50px;
+	height: 100%;
+	background-color: $white;
+	padding-right: 2px;
+	border-right: 1px solid rgba(0, 0, 0, .19);
+	.heading{
+		margin-bottom: 4px;
+	    padding-left: 8px;
+	    border-bottom: 1px solid rgba(45, 62, 79, .05);
+	    background-color: rgba(236, 240, 241, .57);
+	    color: $chat-heading-color;
+	    font-size: 14px;
+	    line-height: 21px;
+	    font-weight: 500;
+	}
+	.person{
+		text-decoration: none;
+		.media{
+			margin: 7px 5px;
+			.media-body{
+				padding: 3px 5px;
+				.online{
+					float: right;
+					color: $green;
+    				font-size: 8px;
+    				padding-top: 3px;
+				}
+				.media-heading{
+					color: $black;
+					font-weight: 400;
+		    		font-size: 14px;
+				}
+				p{
+					color: $chat-active-color;
+		    		font-size: 12px;
+				}
+			}
+		}
+	}
+}
