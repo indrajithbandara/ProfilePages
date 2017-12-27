@@ -224,3 +224,63 @@ body {
       border-right: 1px solid rgba(0, 0, 0, 0.19); }
     #wrapper_profile_content #profile_content #profile_header #profile_navigation .orgs {
       border-right: 1px solid rgba(0, 0, 0, 0.19); }
+  #wrapper_profile_content #profile_content #block {
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    margin-left: -40px;
+    margin-right: -30px; }
+  #wrapper_profile_content #profile_content #informations {
+    margin-left: -55px;
+    margin-right: -40px;
+    width: 330px;
+    margin-top: 10px; }
+    #wrapper_profile_content #profile_content #informations button {
+      padding: 8px 0px;
+      width: 130px;
+      font-weight: 400;
+      font-size: 16px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgba(73, 100, 123, 0.34);
+      border-radius: 3px;
+      background-color: #fff;
+      -webkit-box-shadow: 1px 1px 1px 0 rgba(45, 62, 79, 0.19);
+      box-shadow: 1px 1px 1px 0 rgba(45, 62, 79, 0.19);
+      color: #49647b;
+      text-align: center;
+      text-decoration: none; }
+    #wrapper_profile_content #profile_content #informations .btn-message {
+      margin-left: 20px; }
+    #wrapper_profile_content #profile_content #informations .btn-following {
+      background-color: #20ac99;
+      color: #edeff2;
+      font-weight: 500; }
+    #wrapper_profile_content #profile_content #informations #main_informations {
+      background-color: #ffffff;
+      border: 1px solid #bec3c7;
+      border-radius: 3px;
+      padding: 0px 10px 0px;
+      width: 100%;
+      float: right;
+      margin-right: 8px;
+      margin-top: 10px;
+      font-weight: 500; }
+      #wrapper_profile_content #profile_content #informations #main_informations h2 {
+        line-height: 10px; }
+      #wrapper_profile_content #profile_content #informations #main_informations .sub {
+        font-size: 12px;
+        line-height: 21px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #676770; }
+      #wrapper_profile_content #profile_content #informations #main_informations .proffesion {
+        color: #404047;
+        line-height: 0px;
+        font-size: 12px;
+        text-align: center; }
+      #wrapper_profile_content #profile_content #informations #main_informations .location {
+        font-size: 16px;
+        color: #2e80b6; }

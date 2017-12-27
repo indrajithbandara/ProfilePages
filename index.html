@@ -202,7 +202,7 @@
       <div class="container">
         <div class="row">
           <div id="profile_content">
-            <div class="col-md-offset-4 col-md-6">
+            <div class="col-md-offset-4 col-md-6" id="content_container">
               <div id="profile_header">
                 <div id="cover_image">
                   <div class="btn-group">
@@ -225,9 +225,25 @@
                   <a href="#" class="feeds">Feeds</a>
                   <a href="#" class="resume">Resume</a>
                   <a href="#" class="orgs">Orgs</a>
-                </div>
+                </div>  <!-- End of Profile Navigation -->
               </div>  <!-- End of Profile Header -->
-            </div>
+
+              <div class="row">
+                <div class="col-md-8" id="feeds">
+                  <div id="block"></div>
+                </div>
+                <div class="col-md-4" id="informations">
+                  <button type="button" class="btn btn-follow">Follow</button>
+                  <button type="button" class="btn btn-message"><i class="fa fa-weixin"></i> Message</button>
+                  <div id="main_informations" class="text-center">
+                    <h2 class="name">Stefan Omerovic</h2>
+                    <p class="sub">Outline</p>
+                    <p class="proffesion">Proffesion</p>
+                    <p class="location"><i class="fa fa-location-arrow"></i> Valjevo, Serbia</p>
+                  </div>  <!-- End of main Informations -->
+                </div>  <!-- End of Informations -->
+              </div>  <!-- End of Row -->
+            </div>  <!-- End of Content Container -->
           </div>  <!-- End of Profile Content -->
         </div>  <!-- End of Row -->
       </div>  <!-- End of Container -->
