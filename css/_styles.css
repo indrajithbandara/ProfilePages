@@ -260,7 +260,7 @@ body {
       background-color: #ffffff;
       border: 1px solid #bec3c7;
       border-radius: 3px;
-      padding: 0px 10px 0px;
+      padding: 0px 10px 10px;
       width: 100%;
       float: right;
       margin-right: 8px;
@@ -283,4 +283,105 @@ body {
         text-align: center; }
       #wrapper_profile_content #profile_content #informations #main_informations .location {
         font-size: 16px;
-        color: #2e80b6; }
+        color: #2e80b6;
+        text-decoration: none; }
+    #wrapper_profile_content #profile_content #informations #orgs {
+      background-color: #ffffff;
+      border: 1px solid #bec3c7;
+      border-radius: 3px;
+      padding: 0px 10px 0px;
+      width: 100%;
+      float: right;
+      margin-right: 8px;
+      margin-top: 10px;
+      font-weight: 500; }
+      #wrapper_profile_content #profile_content #informations #orgs h6 {
+        color: #404047;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 6px; }
+      #wrapper_profile_content #profile_content #informations #orgs .create-org {
+        color: #0070ff;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none; }
+      #wrapper_profile_content #profile_content #informations #orgs .media {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+        text-align: left;
+        cursor: pointer;
+        margin-bottom: 5px; }
+        #wrapper_profile_content #profile_content #informations #orgs .media .media-body {
+          padding-top: 5px;
+          padding-left: 60px; }
+          #wrapper_profile_content #profile_content #informations #orgs .media .media-body .media-heading {
+            font-size: 14px;
+            line-height: 21px;
+            color: #2d3e4f;
+            font-weight: 500; }
+            #wrapper_profile_content #profile_content #informations #orgs .media .media-body .media-heading .notification {
+              color: #fc7d64;
+              font-size: 8px;
+              padding-left: 10px; }
+          #wrapper_profile_content #profile_content #informations #orgs .media .media-body .job-position {
+            color: #49647b;
+            font-size: 12px;
+            line-height: 10px;
+            font-weight: 400; }
+      #wrapper_profile_content #profile_content #informations #orgs .unseen {
+        border-right: 2px solid #e2a62b; }
+        #wrapper_profile_content #profile_content #informations #orgs .unseen .media-body {
+          padding-left: 40px; }
+      #wrapper_profile_content #profile_content #informations #orgs .load-more-orgs {
+        color: #2e80b6;
+        font-weight: 500;
+        font-size: 12px;
+        display: block;
+        padding: 10px 0px; }
+    #wrapper_profile_content #profile_content #informations #projects {
+      background-color: #ffffff;
+      border: 1px solid #bec3c7;
+      border-radius: 3px;
+      padding: 0px 10px 0px;
+      width: 100%;
+      float: right;
+      margin-right: 8px;
+      margin-top: 10px;
+      font-weight: 500; }
+      #wrapper_profile_content #profile_content #informations #projects h6 {
+        color: #404047;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 6px; }
+      #wrapper_profile_content #profile_content #informations #projects .create-project {
+        color: #0070ff;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none; }
+      #wrapper_profile_content #profile_content #informations #projects .media {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+        text-align: left;
+        margin-bottom: 10px;
+        cursor: pointer;
+        margin-top: 3px;
+        margin-bottom: 5px; }
+        #wrapper_profile_content #profile_content #informations #projects .media .media-body {
+          padding-top: 5px;
+          padding-left: 100px; }
+          #wrapper_profile_content #profile_content #informations #projects .media .media-body .media-heading {
+            font-size: 14px;
+            line-height: 21px;
+            color: #2d3e4f;
+            font-weight: 500; }
+            #wrapper_profile_content #profile_content #informations #projects .media .media-body .media-heading .notification {
+              color: #fc7d64;
+              font-size: 8px;
+              padding-left: 6px; }
+          #wrapper_profile_content #profile_content #informations #projects .media .media-body .job-position {
+            color: #49647b;
+            font-size: 12px;
+            line-height: 10px;
+            font-weight: 400; }
+      #wrapper_profile_content #profile_content #informations #projects .unseen {
+        border-right: 2px solid #e2a62b; }
+        #wrapper_profile_content #profile_content #informations #projects .unseen .media-body {
+          padding-left: 80px; }

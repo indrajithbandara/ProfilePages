@@ -254,7 +254,7 @@ body{
 				background-color: $white;
 				border: 1px solid $profile-border-color;
 				border-radius: 3px;
-				padding: 0px 10px 0px;
+				padding: 0px 10px 10px;
 				width: 100%;
 				float: right;
 				margin-right: 8px;
@@ -281,6 +281,128 @@ body{
 				.location{
 					font-size: 16px;
 					color: $informations-location-color;
+					text-decoration: none;
+				}
+			}
+			#orgs{
+				background-color: $white;
+				border: 1px solid $profile-border-color;
+				border-radius: 3px;
+				padding: 0px 10px 0px;
+				width: 100%;
+				float: right;
+				margin-right: 8px;
+				margin-top: 10px;
+				font-weight: 500;
+				h6{
+				    color: #404047;
+				    font-size: 12px;
+				    font-weight: bold;
+				   	line-height: 6px;
+				}
+				.create-org{
+				    color: $create-org-color;
+				    font-size: 12px;
+				    font-weight: 500;
+				    text-decoration: none;
+				}
+				.media{
+					border-bottom: 1px solid rgba(0, 0, 0, .19);
+					text-align: left;
+					cursor: pointer;
+					margin-bottom: 5px;
+					.media-body{
+						padding-top: 5px;
+						padding-left: 60px;
+						.media-heading{
+							font-size: 14px;
+							line-height: 21px;
+							color: $chat-heading-color;
+							font-weight: 500;
+							.notification{
+								color: $notification-color;
+    							font-size: 8px;
+    							padding-left: 10px;
+							}
+						}
+						.job-position{
+							color: $profile-navigation-color;
+						    font-size: 12px;
+						    line-height: 10px;
+						    font-weight: 400;
+						}
+					}
+				}
+				.unseen{
+					border-right: 2px solid $yellow;
+					.media-body{
+						padding-left: 40px;
+					}
+				}
+				.load-more-orgs{
+					color: $informations-location-color;
+					font-weight: 500;
+    				font-size: 12px;
+    				display: block;
+    				padding: 10px 0px;
+				}
+			}
+			#projects{
+				background-color: $white;
+				border: 1px solid $profile-border-color;
+				border-radius: 3px;
+				padding: 0px 10px 0px;
+				width: 100%;
+				float: right;
+				margin-right: 8px;
+				margin-top: 10px;
+				font-weight: 500;
+				h6{
+				    color: #404047;
+				    font-size: 12px;
+				    font-weight: bold;
+				   	line-height: 6px;
+				}
+				.create-project{
+				    color: $create-org-color;
+				    font-size: 12px;
+				    font-weight: 500;
+				    text-decoration: none;
+				}
+				.media{
+					border-bottom: 1px solid rgba(0, 0, 0, .19);
+					text-align: left;
+					margin-bottom: 10px;
+					cursor: pointer;
+					margin-top: 3px;
+					margin-bottom: 5px;
+					.media-body{
+						padding-top: 5px;
+						padding-left: 100px;
+						.media-heading{
+							font-size: 14px;
+							line-height: 21px;
+							color: $chat-heading-color;
+							font-weight: 500;
+							.notification{
+								color: $notification-color;
+    							font-size: 8px;
+    							padding-left: 6px;
+							}
+						}
+						.job-position{
+							color: $profile-navigation-color;
+						    font-size: 12px;
+						    line-height: 10px;
+						    font-weight: 400;
+						}
+					}
+				}
+				.unseen{
+					border-right: 2px solid $yellow;
+					.media-body{
+						padding-left: 80px;
+					}
 				}
 			}
 		}
