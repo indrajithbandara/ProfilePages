@@ -224,12 +224,140 @@ body {
       border-right: 1px solid rgba(0, 0, 0, 0.19); }
     #wrapper_profile_content #profile_content #profile_header #profile_navigation .orgs {
       border-right: 1px solid rgba(0, 0, 0, 0.19); }
-  #wrapper_profile_content #profile_content #block {
+  #wrapper_profile_content #profile_content #post {
     background-color: white;
-    height: 500px;
     width: 100%;
     margin-left: -40px;
-    margin-right: -30px; }
+    margin-right: -30px;
+    background-color: #ffffff;
+    border: 1px solid #bec3c7;
+    border-radius: 3px;
+    padding: 0px 0px 10px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 500;
+    text-align: right; }
+    #wrapper_profile_content #profile_content #post .post-header {
+      background-color: rgba(65, 111, 143, 0.07);
+      width: 100%;
+      text-align: right;
+      padding: 5px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.21); }
+      #wrapper_profile_content #profile_content #post .post-header a {
+        text-align: right;
+        color: grey; }
+    #wrapper_profile_content #profile_content #post .type-message textarea {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+      height: 57px;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 5px 10px;
+      outline: none; }
+      #wrapper_profile_content #profile_content #post .type-message textarea:focus {
+        border-color: #3898ec; }
+      #wrapper_profile_content #profile_content #post .type-message textarea::-webkit-input-placeholder {
+        color: #999; }
+      #wrapper_profile_content #profile_content #post .type-message textarea:-ms-input-placeholder {
+        color: #999; }
+      #wrapper_profile_content #profile_content #post .type-message textarea::-ms-input-placeholder {
+        color: #999; }
+      #wrapper_profile_content #profile_content #post .type-message textarea::placeholder {
+        color: #999; }
+    #wrapper_profile_content #profile_content #post .post-btn {
+      margin-right: 8px;
+      padding: 5px 8px;
+      border-radius: 0px;
+      font-size: 16px;
+      border: 1px solid #3b99d9;
+      background-color: #3b99d9;
+      color: #ecf0f1;
+      -webkit-transition: 0.4s ease all;
+      -moz-transition: 0.4s ease all;
+      -ms-transition: 0.4s ease all;
+      -o-transition: 0.4s ease all;
+      transition: 0.4s ease all; }
+      #wrapper_profile_content #profile_content #post .post-btn:hover {
+        color: #3b99d9;
+        background-color: #ffffff;
+        -webkit-transition: 0.4s ease all;
+        -moz-transition: 0.4s ease all;
+        -ms-transition: 0.4s ease all;
+        -o-transition: 0.4s ease all;
+        transition: 0.4s ease all; }
+  #wrapper_profile_content #profile_content #feed {
+    background-color: white;
+    width: 100%;
+    margin-left: -40px;
+    margin-right: -30px;
+    background-color: #ffffff;
+    border: 1px solid #bec3c7;
+    border-radius: 3px;
+    padding: 0px 0px 10px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 500; }
+    #wrapper_profile_content #profile_content #feed .feed-header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+      padding: 5px; }
+      #wrapper_profile_content #profile_content #feed .feed-header .media-heading {
+        color: #2d3e4f;
+        padding-top: 10px;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 500; }
+      #wrapper_profile_content #profile_content #feed .feed-header .btn-group {
+        float: right;
+        margin-top: -45px;
+        margin-right: -10px; }
+        #wrapper_profile_content #profile_content #feed .feed-header .btn-group button {
+          background-color: transparent;
+          border: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          color: #999; }
+      #wrapper_profile_content #profile_content #feed .feed-header .time {
+        float: right;
+        font-size: 12px;
+        color: #2e80b6;
+        margin-top: -25px;
+        margin-right: 20px;
+        text-decoration: underline; }
+    #wrapper_profile_content #profile_content #feed .feed-post {
+      padding: 5px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.21); }
+      #wrapper_profile_content #profile_content #feed .feed-post p {
+        color: #404047;
+        font-size: 18px;
+        font-weight: 400; }
+    #wrapper_profile_content #profile_content #feed .share-like {
+      padding: 5px 0px 0px; }
+      #wrapper_profile_content #profile_content #feed .share-like a {
+        color: #3b99d9;
+        font-size: 15px;
+        font-weight: 400;
+        padding-right: 15px; }
+    #wrapper_profile_content #profile_content #feed .comments {
+      padding: 10px 5px;
+      background-color: rgba(65, 111, 143, 0.07); }
+      #wrapper_profile_content #profile_content #feed .comments a {
+        color: #3b99d9;
+        font-size: 15px;
+        font-weight: 400;
+        padding-right: 30px; }
+      #wrapper_profile_content #profile_content #feed .comments .media {
+        margin-top: -20px;
+        margin-bottom: -20px; }
+        #wrapper_profile_content #profile_content #feed .comments .media .media-body textarea {
+          width: 100%;
+          margin-top: 23px;
+          height: 38px;
+          padding: 8px 12px;
+          border: 1px solid #cccccc;
+          outline: none; }
+          #wrapper_profile_content #profile_content #feed .comments .media .media-body textarea:focus {
+            border-color: #2e80b6; }
   #wrapper_profile_content #profile_content #informations {
     margin-left: -55px;
     margin-right: -40px;
@@ -385,3 +513,21 @@ body {
         border-right: 2px solid #e2a62b; }
         #wrapper_profile_content #profile_content #informations #projects .unseen .media-body {
           padding-left: 80px; }
+    #wrapper_profile_content #profile_content #informations #tags {
+      background-color: #ffffff;
+      border: 1px solid #bec3c7;
+      border-radius: 3px;
+      padding: 0px 10px 0px;
+      width: 100%;
+      float: right;
+      margin-right: 8px;
+      margin-top: 10px;
+      font-weight: 500; }
+      #wrapper_profile_content #profile_content #informations #tags h6 {
+        color: #404047;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 6px; }
+      #wrapper_profile_content #profile_content #informations #tags .tags {
+        font-size: 16px;
+        color: #2e80b6; }

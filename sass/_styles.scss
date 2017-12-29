@@ -215,12 +215,153 @@ body{
 				}
 			}
 		}
-		#block{
+		#post{
 			background-color: white;
-			height: 500px;
 			width: 100%;
 			margin-left: -40px;
 			margin-right: -30px;
+			background-color: $white;
+			border: 1px solid $profile-border-color;
+			border-radius: 3px;
+			padding: 0px 0px 10px;
+			width: 100%;
+			margin-top: 10px;
+			font-weight: 500;
+			text-align: right;
+			.post-header{
+				background-color: rgba(65, 111, 143, .07);
+				width: 100%;
+				text-align: right;
+				padding: 5px;
+				border-bottom: 1px solid rgba(0, 0, 0, .21);
+				a{
+					text-align: right;
+					color: grey;
+				}
+			}
+			.type-message{
+				textarea{
+					width: 100%;
+					border: none;
+					border-bottom: 1px solid rgba(0, 0, 0, .21);
+					height: 57px;
+					font-size: 14px;
+					font-weight: 400;
+					padding: 5px 10px;
+					outline: none;
+					&:focus{
+						border-color: $type-border-color;
+					}&::placeholder{
+						color: #999;
+					}
+				}
+			}
+			.post-btn{
+				margin-right: 8px;
+			    padding: 5px 8px;
+			    border-radius: 0px;
+			    font-size: 16px;
+			    border: 1px solid $post-btn-bg;
+			    background-color: $post-btn-bg;
+			    color: $post-btn-color;
+			    @include transition( 0.4s ease all);
+			    &:hover{
+			    	color: $post-btn-bg;
+			    	background-color: $white;
+			    	@include transition( 0.4s ease all);
+			    }
+			}
+		}
+		#feed{
+			background-color: white;
+			width: 100%;
+			margin-left: -40px;
+			margin-right: -30px;
+			background-color: $white;
+			border: 1px solid $profile-border-color;
+			border-radius: 3px;
+			padding: 0px 0px 10px;
+			width: 100%;
+			margin-top: 10px;
+			font-weight: 500;
+			.feed-header{
+				border-bottom: 1px solid rgba(0, 0, 0, .21);
+				padding: 5px;
+				.media-heading{
+					color: $chat-heading-color;
+					padding-top: 10px;
+				    font-size: 16px;
+				    line-height: 21px;
+				    font-weight: 500;
+				}
+				.btn-group{
+					float: right;
+					margin-top: -45px;
+					margin-right: -10px;
+					button{
+						background-color: transparent;
+						border: none;
+						box-shadow: none;
+						color: #999;
+					}
+					.dropdown-menu{
+						
+					}
+				}
+				.time{
+					float: right;
+					font-size: 12px;
+					color: $informations-location-color;
+					margin-top: -25px;
+					margin-right: 20px;
+					text-decoration: underline;
+				}
+			}
+			.feed-post{
+				padding: 5px;
+				border-bottom: 1px solid rgba(0, 0, 0, .21);
+				p{
+				    color: $informations-proffeesion-color;
+				    font-size: 18px;
+				    font-weight: 400;
+				}
+			}
+			.share-like{
+				padding: 5px 0px 0px;
+				a{
+					color: $post-btn-bg;
+    				font-size: 15px;
+    				font-weight: 400;
+    				padding-right: 15px;
+				}
+			}
+			.comments{
+				padding: 10px 5px; 
+				background-color: rgba(65, 111, 143, .07);
+				a{
+					color: $post-btn-bg;
+    				font-size: 15px;
+    				font-weight: 400;
+    				padding-right: 30px;
+				}
+				.media{
+					margin-top: -20px;
+					margin-bottom: -20px;
+					.media-body{
+						textarea{
+							width: 100%;
+							margin-top: 23px;
+							height: 38px;
+							padding: 8px 12px;
+							border: 1px solid #cccccc;
+							outline: none;
+							&:focus{
+								border-color: $informations-location-color;
+							}
+						}
+					}
+				}
+			}
 		}
 		#informations{
 			margin-left: -55px;
@@ -403,6 +544,27 @@ body{
 					.media-body{
 						padding-left: 80px;
 					}
+				}
+			}
+			#tags{
+				background-color: $white;
+				border: 1px solid $profile-border-color;
+				border-radius: 3px;
+				padding: 0px 10px 0px;
+				width: 100%;
+				float: right;
+				margin-right: 8px;
+				margin-top: 10px;
+				font-weight: 500;
+				h6{
+				    color: #404047;
+				    font-size: 12px;
+				    font-weight: bold;
+				   	line-height: 6px;
+				}
+				.tags{
+					font-size: 16px;
+					color: $informations-location-color;
 				}
 			}
 		}
