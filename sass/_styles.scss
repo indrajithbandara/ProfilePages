@@ -5,6 +5,18 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	background-color: $body-bg;
+	min-height: 1780px;
+	position: relative;
+	overflow: scroll;
+	overflow-x: hidden;
+	&::-webkit-scrollbar {
+	background-color: $white;
+	width: 3px !important;
+	}&::-webkit-scrollbar-thumb{
+		background-color: $blue;
+		height: 200px !important;
+		width: 3px;
+	}
 }
 /* MAIN NAVIGATION */
 #main_navigation{ 
@@ -98,6 +110,8 @@ body{
 	left: 0;
 	top: 50px;
 	height: 100%;
+	bottom: 0;
+	display: block;
 	background-color: $white;
 	padding-right: 2px;
 	border-right: 1px solid rgba(0, 0, 0, .19);
@@ -311,6 +325,7 @@ body{
 				.time{
 					float: right;
 					font-size: 12px;
+					font-weight: 400;
 					color: $informations-location-color;
 					margin-top: -25px;
 					margin-right: 20px;
@@ -318,16 +333,20 @@ body{
 				}
 			}
 			.feed-post{
-				padding: 5px;
+				padding: 10px;
 				border-bottom: 1px solid rgba(0, 0, 0, .21);
 				p{
 				    color: $informations-proffeesion-color;
 				    font-size: 18px;
+				    line-height: 18px;
 				    font-weight: 400;
+				}
+				.media-image{
+					padding: 10px;
 				}
 			}
 			.share-like{
-				padding: 5px 0px 0px;
+				padding: 5px 15px 0px 0px;
 				a{
 					color: $post-btn-bg;
     				font-size: 15px;
@@ -336,7 +355,7 @@ body{
 				}
 			}
 			.comments{
-				padding: 10px 5px; 
+				padding: 5px 0px; 
 				background-color: rgba(65, 111, 143, .07);
 				a{
 					color: $post-btn-bg;
@@ -344,19 +363,73 @@ body{
     				font-weight: 400;
     				padding-right: 30px;
 				}
+				.like-section{
+					border-bottom: 1px solid $profile-border-color;
+					padding: 5px 5px;
+				}
+				.comment{
+					margin-top: 10px !important;
+					display: inline-block;
+					.commentator{
+						font-size: 14px;
+						float: left;
+						padding-right: 5px;
+					}
+					.commentar{
+						font-size: 14px;
+						color: $informations-sub-color;
+						font-weight: 400;
+						margin-bottom: -5px;
+					}
+					.show-more{
+						color: $post-btn-bg;
+						font-size: 12px;
+						font-weight: 500;
+						display: inline-block;
+						margin-bottom: 10px;
+						margin-left: 5px;
+					}
+					.time{
+						font-size: 12px;
+						font-weight: 400;
+						color: $informations-location-color;
+						text-decoration: underline;
+						margin-left: -5px;
+					}
+					.reply{
+						margin-left: -20px;
+						padding-right: 10px;
+					}
+				}
+				.comment-nested{
+					border-left: 2px solid rgba(46, 128, 182, .39);
+					margin-left: 30px !important;
+					.media-object{
+						margin-left: 10px;
+					}
+					.time{
+						display: inline-block;
+						margin-bottom: 20px;
+						margin-left: 115px;
+					}
+				}
 				.media{
-					margin-top: -20px;
+					margin-top: -10px;
 					margin-bottom: -20px;
+					margin-left: 10px;
 					.media-body{
 						textarea{
-							width: 100%;
+							width: 95%;
 							margin-top: 23px;
 							height: 38px;
+							font-weight: 400;
 							padding: 8px 12px;
 							border: 1px solid #cccccc;
 							outline: none;
 							&:focus{
 								border-color: $informations-location-color;
+							}&::placeholder{
+								color: #999;
 							}
 						}
 					}
