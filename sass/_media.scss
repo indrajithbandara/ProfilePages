@@ -23,6 +23,47 @@ and ( max-width: 480px ){
 			}
 		}
 	}
+	#wrapper_profile_content{
+		#profile_content{
+			#profile_header{
+				padding: 0px !important;
+				margin: 0px !important;
+				#cover_image{
+					height: 200px !important;
+				}
+			} 
+		}
+		#feeds{
+			#post{
+				margin: 0px !important;
+				margin-top: 10px !important;
+			}
+			#feed{
+				margin: 0px !important;
+				margin-top: 10px !important;
+				.feed-header{
+					.time{
+						margin-right: 0px !important;
+						margin-top: -24px !important;
+					}
+				}
+				.comment{
+					.time{
+						display: block;
+						margin-left: 0px !important;
+					}
+					.reply{
+						margin-left: -27px !important;
+						font-size: 12px;
+					}
+					.like{
+						font-size: 12px;
+						margin-left: -5px !important;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Small Screens Landscape */
@@ -63,6 +104,47 @@ and ( max-width: 767px ){
 			}
 		}
 	}
+	#wrapper_profile_content{
+		#profile_content{
+			#profile_header{
+				padding: 0px !important;
+				margin: 0px !important;
+				#cover_image{
+					height: 200px !important;
+				}
+			} 
+		}
+		#feeds{
+			#post{
+				margin: 0px !important;
+				margin-top: 10px !important;
+			}
+			#feed{
+				margin: 0px !important;
+				margin-top: 10px !important;
+				.feed-header{
+					.time{
+						margin-right: 0px !important;
+						margin-top: -24px !important;
+					}
+				}
+				.comment{
+					.time{
+						display: block;
+						margin-left: 0px !important;
+					}
+					.reply{
+						margin-left: -27px !important;
+						font-size: 12px;
+					}
+					.like{
+						font-size: 12px;
+						margin-left: -5px !important;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Smarth Phones Landscape */
@@ -89,6 +171,52 @@ and ( max-width: 1024px ){
 			}
 		}
 	}
+	#wrapper_profile_content{
+		#profile_content{
+			#profile_header{
+				padding: 0px !important;
+				margin: 0px !important;
+				#cover_image{
+					height: 200px !important;
+				}
+				#profile_picture{
+					img{
+						margin: 0px !important;
+					}
+				}
+			} 
+		}
+		#feeds{
+			#post{
+				margin: 0px !important;
+				margin-top: 10px !important;
+			}
+			#feed{
+				margin: 0px !important;
+				margin-top: 10px !important;
+				.feed-header{
+					.time{
+						margin-right: 0px !important;
+						margin-top: -24px !important;
+					}
+				}
+				.comment{
+					.time{
+						display: block;
+						margin-left: 0px !important;
+					}
+					.reply{
+						margin-left: -27px !important;
+						font-size: 12px;
+					}
+					.like{
+						font-size: 12px;
+						margin-left: -5px !important;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Tablets Landscape */
@@ -96,14 +224,45 @@ and ( max-width: 1024px ){
 and ( min-width: 768px )
 and ( max-width: 1024px )
 and ( orientation: landscape ){
-
+	#wrapper_profile_content{
+		#profile_content{
+			#feeds{
+				width: 100% !important;
+			}
+			#informations{
+				display: none;
+			}
+		}
+	}
 }
 
 /* Laptops */
 @media screen
 and ( min-width: 1025px )
-and ( max-width: 1250px ){
-
+and ( max-width: 1410px ){
+	#wrapper_profile_content{
+		#profile_content{
+			#feeds{
+				width: 65% !important;
+			}
+			#informations{
+				margin-left: -60px !important;
+				width: 48% !important;
+				.btn{
+					display: block !important;
+					margin: 0 auto !important;
+				}
+				.btn-message{
+					margin-top: 10px !important;
+				}
+				#main_informations{
+					h2{
+						line-height: 20px !important;
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Laptops Landscape */
