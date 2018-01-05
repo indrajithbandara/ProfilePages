@@ -304,6 +304,9 @@ body{
 			    }
 			}
 		}
+		.related-feeds{
+			margin-top: -15px !important;
+		}
 		#feed{
 			background-color: white;
 			width: 100%;
@@ -637,6 +640,9 @@ body{
 					}
 				}
 			}
+			.related-tags{
+				margin-top: -15px !important;
+			}
 			#tags{
 				background-color: $white;
 				border: 1px solid $profile-border-color;
@@ -647,6 +653,12 @@ body{
 				margin-right: 8px;
 				margin-top: 10px;
 				font-weight: 500;
+				.show-feeds{
+					font-size: 12px;
+					font-weight: 500;
+					color: $create-org-color;
+					padding-top: 10px;
+				}
 				h6{
 				    color: #404047;
 				    font-size: 12px;
@@ -656,6 +668,36 @@ body{
 				.tags{
 					font-size: 16px;
 					color: $informations-location-color;
+				}
+				.enter-tags{
+					margin-bottom: 10px;
+					height: 38px;
+					font-weight: 400;
+					padding: 8px 12px;
+					border: 1px solid #cccccc;
+					border-radius: 0px;
+					outline: none;
+					&:focus{
+					border-color: $informations-location-color;
+					outline: none;
+					}&:active{
+					border-color: $informations-location-color;
+					outline: none;
+					}
+					&::placeholder{
+					color: #999;
+					}
+				}
+				.search-btn{
+					background-color: $type-border-color;
+					padding: 10px 14px;
+					width: auto;
+					color: $white;
+					font-weight: 400;
+					border-radius: 0px;
+					border: none;
+					float: left;
+					margin-bottom: 30px;
 				}
 			}
 		}

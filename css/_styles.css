@@ -403,6 +403,8 @@ body {
         -ms-transition: 0.4s ease all;
         -o-transition: 0.4s ease all;
         transition: 0.4s ease all; }
+  #wrapper_profile_content #profile_content .related-feeds {
+    margin-top: -15px !important; }
   #wrapper_profile_content #profile_content #feed {
     background-color: white;
     width: 100%;
@@ -684,6 +686,8 @@ body {
         border-right: 2px solid #e2a62b; }
         #wrapper_profile_content #profile_content #informations #projects .unseen .media-body {
           padding-left: 80px; }
+    #wrapper_profile_content #profile_content #informations .related-tags {
+      margin-top: -15px !important; }
     #wrapper_profile_content #profile_content #informations #tags {
       background-color: #ffffff;
       border: 1px solid #bec3c7;
@@ -694,6 +698,11 @@ body {
       margin-right: 8px;
       margin-top: 10px;
       font-weight: 500; }
+      #wrapper_profile_content #profile_content #informations #tags .show-feeds {
+        font-size: 12px;
+        font-weight: 500;
+        color: #0070ff;
+        padding-top: 10px; }
       #wrapper_profile_content #profile_content #informations #tags h6 {
         color: #404047;
         font-size: 12px;
@@ -702,3 +711,35 @@ body {
       #wrapper_profile_content #profile_content #informations #tags .tags {
         font-size: 16px;
         color: #2e80b6; }
+      #wrapper_profile_content #profile_content #informations #tags .enter-tags {
+        margin-bottom: 10px;
+        height: 38px;
+        font-weight: 400;
+        padding: 8px 12px;
+        border: 1px solid #cccccc;
+        border-radius: 0px;
+        outline: none; }
+        #wrapper_profile_content #profile_content #informations #tags .enter-tags:focus {
+          border-color: #2e80b6;
+          outline: none; }
+        #wrapper_profile_content #profile_content #informations #tags .enter-tags:active {
+          border-color: #2e80b6;
+          outline: none; }
+        #wrapper_profile_content #profile_content #informations #tags .enter-tags::-webkit-input-placeholder {
+          color: #999; }
+        #wrapper_profile_content #profile_content #informations #tags .enter-tags:-ms-input-placeholder {
+          color: #999; }
+        #wrapper_profile_content #profile_content #informations #tags .enter-tags::-ms-input-placeholder {
+          color: #999; }
+        #wrapper_profile_content #profile_content #informations #tags .enter-tags::placeholder {
+          color: #999; }
+      #wrapper_profile_content #profile_content #informations #tags .search-btn {
+        background-color: #3898ec;
+        padding: 10px 14px;
+        width: auto;
+        color: #ffffff;
+        font-weight: 400;
+        border-radius: 0px;
+        border: none;
+        float: left;
+        margin-bottom: 30px; }
